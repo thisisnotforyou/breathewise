@@ -190,7 +190,7 @@ export function Globe({ cities, selected, onSelect, mode, lang, handle, variant 
         paint: { "text-color": night ? "#ffffff" : "#22201c", "text-halo-color": night ? "rgba(7,12,36,0.85)" : "rgba(255,253,249,0.9)", "text-halo-width": 1.4 },
       });
       // Hover: name + AQI. Click: select.
-      const hover = new lib.Popup({ closeButton: false, closeOnClick: false, offset: 10, className: "globe-hover" });
+      const hover = new lib.Popup({ closeButton: false, closeOnClick: false, focusAfterOpen: false, offset: 10, className: "globe-hover" });
       map.on("mouseenter", "city-dot", (e) => {
         map.getCanvas().style.cursor = "pointer";
         const f = e.features?.[0];
@@ -278,7 +278,7 @@ export function Globe({ cities, selected, onSelect, mode, lang, handle, variant 
       btn.addEventListener("click", callout.onAction);
       card.append(btn);
     }
-    popup.current = new lib.Popup({ closeButton: false, closeOnClick: false, anchor: "left", offset: 26, className: "globe-popup", maxWidth: "280px" })
+    popup.current = new lib.Popup({ closeButton: false, closeOnClick: false, focusAfterOpen: false, anchor: "left", offset: 26, className: "globe-popup", maxWidth: "280px" })
       .setLngLat([c.lon, c.lat])
       .setDOMContent(card)
       .addTo(map);
