@@ -1,0 +1,38 @@
+{
+  "name": "breathewise-ai",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@deck.gl/core": "9.4.1",
+    "@deck.gl/extensions": "9.4.1",
+    "@deck.gl/geo-layers": "9.4.1",
+    "@deck.gl/layers": "9.4.1",
+    "@deck.gl/mapbox": "9.4.1",
+    "@deck.gl/mesh-layers": "9.4.1",
+    "@loaders.gl/3d-tiles": "4.5.4",
+    "@loaders.gl/core": "4.5.4",
+    "maplibre-gl": "5.24.1",
+    "next": "16.4.6",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.3.5",
+    "@types/node": "22.20.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.4.6",
+    "tailwindcss": "4.3.5",
+    "typescript": "5.9.3",
+    "vitest": "5.1.0"
+  }
+}
